@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noEmitHelpers": true,
+    "outDir": "lib",
+    "strictNullChecks": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
