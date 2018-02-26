@@ -8,3 +8,7 @@ npm install
 npm run build
 node lib/main.js [--base <num> [ --initialInput <num> [ --inputOverTime <num>]]] [--target <num> | --yearlyGoal <num>]
 ```
+#### Example
+```
+node lib/main.js --base 70 --initialInput 5.5 --inputOverTime 19.3 --yearlyGoal 40
+```
