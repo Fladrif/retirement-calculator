@@ -1,11 +1,20 @@
 import { argv } from 'yargs';
 
 function main() {
-  const base = argv.base;
-  const initialInput = argv.initialInput;
-  const inputOverTime = argv.inputOverTime;
+  const base = argv.base || 0;
+  const initialInput = argv.initialInput || 0;
+  const inputOverTime = argv.inputOverTime || 0;
   const yearlyGoal = argv.yearlyGoal;
-  const target = getTarget(yearlyGoal);
+
+  let target;
+  if (yearlyGoal) {
+    target = getTarget(yearlyGoal);
+  } else if (argv.target) {
+    target = argv.target;
+  } else {
+    console.log('Include either --target or --yearlyGoal');
+    return;
+  }
 
   let total = base;
   let counter = 0;
