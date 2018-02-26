@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "watch": "",
+    "start": "docker build -f docker/Dockerfile -t calc . && docker run calc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Li",
