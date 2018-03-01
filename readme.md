@@ -6,7 +6,7 @@ Will compound the total by 7% a year assuming an investment in a low cost index 
 ```
 npm install
 npm run build
-node lib/main.js [--base <num> [ --initialInput <num> [ --inputOverTime <num>]]] [--target <num> | --yearlyGoal <num>]
+node lib/main.js [--base <num> [ --initialInput <num> [ --inputOverTime <num>]]] [--target <num> | --yearlyGoal <num> | --years <num>]
 ```
 #### Example
 ```
